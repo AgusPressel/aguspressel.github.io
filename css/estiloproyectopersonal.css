@@ -11,14 +11,61 @@
     font-size: 14px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 10px;
 }
 .ul{
     list-style-type: none;
     text-align: center;
 }
-
-#trabajo{}
-#proactividad{}
-#capacidad{}
-#responsabilidad{}
-#relacion{}
+/* estilos de los parafos de habilidades trasnsversales*/
+#trabajo{ 
+background-color: #626adb ;
+  border-radius: 15px;
+  padding-right:5px;
+  padding-left: 5px;
+ }
+#proactividad{
+	background-color: #53cc3b ;
+	  border-radius: 15px;
+	  padding-right:5px;
+  padding-left: 5px;
+}
+#capacidad{
+	background-color: #f9bb3e ;
+	  border-radius: 15px;
+	  padding-right:5px;
+  padding-left: 5px;
+}
+#responsabilidad{
+	background-color: #adc3ff ;
+	  border-radius: 15px;
+	  padding-right:5px;
+  padding-left: 5px;
+}
+#relacion{
+	background-color: #c544fc;
+	  border-radius: 15px;
+	  padding-right:5px;
+  padding-left: 5px;
+}
+/* estilos de los iconos de habilidades trasnsversales*/
+#trabajo1:hover{
+	background-color: #626adb ;
+	 border-radius: 15px 15px 0px 0px;;
+}
+#proactividad2:hover{
+	background-color: #53cc3b ;
+	 border-radius: 15px 15px 0px 0px;
+}
+#capacidad2:hover{
+	background-color: #f9bb3e;
+	 border-radius: 15px 15px 0px 0px;
+}
+#responsabilidad1:hover{
+	background-color: #adc3ff ;
+	 border-radius: 15px 15px 0px 0px;
+}
+#relacion1:hover{
+	background-color: #c544fc ;
+	 border-radius: 15px 15px 0px 0px;
+}
