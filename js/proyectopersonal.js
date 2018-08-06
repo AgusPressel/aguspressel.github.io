@@ -109,7 +109,7 @@ $(function($){
         $("#form").submit(function(event){
             event.preventDefault();
                 $.ajax({
-                url: "https://formspree.io/aguspressel@hotmail.com", 
+                url: "https://formspree.io/aguspressel@hotmail.com",
                 method: "POST",
                 data: {
                     nombre: $("#nombre").val(),
