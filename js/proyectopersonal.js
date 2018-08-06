@@ -1,11 +1,27 @@
 $(document).ready(function(){
+//----- variables de los contenidos principales   
+    $("#ContenidoSobremi").hide();   
+    $("#ContenidoProyecto").hide();
+    $("#ContenidoTrabajos").hide(); 
+    $("#ContenidoContacto").hide();  
+// fin de variables de los contenidos principales
+// ----- variables  de preguntas sobre mi
+    $("#Rfortalezas").hide();
+    $("#Rdebilidades").hide();
+    $("#Rcarrera").hide();
+    $("#Rfuturo").hide();
+    $("#Rteamwork").hide();
+    $("#Rrol").hide();
+    //----  fin de variables de  preguntas sobre mi
 
+    //------ variables de  habilidades
+    $("#trabajo").hide();
+    $("#proactividad").hide();
+    $("#capacidad").hide();
+    $("#responsabilidad").hide();
+    $("#relacion").hide();
+// -------- fin de variables de habilidades
 
-$("#trabajo").hide();
-$("#proactividad").hide();
-$("#capacidad").hide();
-$("#responsabilidad").hide();
-$("#relacion").hide();
 
     
 
@@ -51,4 +67,45 @@ $("#relacion").hide();
         $("#relacion").hide();
         $("#relacion").css("transition", "0.7s");
     });
+
+// oculador de preguntas en sobre mi
+    $("#Qfortalezas").click(function(){
+        $("#Rfortalezas").toggle(500);       
+    });
+    $("#Qdebilidades").click(function(){
+        $("#Rdebilidades").toggle(500);
+    });
+    $("#Qcarrera").click(function(){
+        $("#Rcarrera").toggle(500);     
+    });
+    $("#Qfuturo").click(function(){
+        $("#Rfuturo").toggle(500);       
+    });
+    $("#Qteamwork").click(function(){
+        $("#Rteamwork").toggle(500);       
+    });
+    $("#Qrol").click(function(){
+        $("#Rrol").toggle(500);       
+    });
+
+// ocultador de contedios principales
+
+   $("#sobremi").click(function(){
+        $("#ContenidoSobremi").toggle(10);       
+    });
+    $("#proyecto").click(function(){
+        $("#ContenidoProyecto").toggle(10);
+    });
+    $("#Trabajos").click(function(){
+        $("#ContenidoTrabajos").toggle(10);     
+    });
+    $("#Contacto").click(function(){
+        $("#ContenidoContacto").toggle(10);       
+    });
+
+
+
+
+
+
 });
