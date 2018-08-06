@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#ContenidoSobremi").hide();   
     $("#ContenidoProyecto").hide();
     $("#ContenidoTrabajos").hide(); 
-    $("#ContenidoContacto").hide();  
+  //  $("#ContenidoContacto").hide();  
 // fin de variables de los contenidos principales
 // ----- variables  de preguntas sobre mi
     $("#Rfortalezas").hide();
@@ -103,7 +103,32 @@ $(document).ready(function(){
         $("#ContenidoContacto").toggle(10);       
     });
 
+//------- formulario de contacto
 
+$(function($){
+        $("#form").submit(function(event){
+            event.preventDefault();
+                $.ajax({
+                url: "https://formspree.io/aguspressel@hotmail.com", 
+                method: "POST",
+                data: {
+                    nombre: $("#nombre").val(),
+                    email: $("#email").val(),
+                    asunto: $("#asunto").val(),
+                    mensaje: $("#textarea").val(),
+                },
+                dataType: "json"
+                }).done(function(){
+                    $("#nombre").val("");
+                    $("#email").val("");
+                    $("#asunto").val("");
+                    $("#textarea").val("");
+                    $(".formresponse").addClass("text-success").text("Mensaje enviado con éxito")                   
+                }).fail(function(){
+                    $(".formresponse").addClass("text-danger").text("Hubo un error en el envío de tu mensaje")
+                });
+        });
+});
 
 
 
