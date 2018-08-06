@@ -13,11 +13,32 @@
 	<script src="boostrap/jquery-3.3.1.min.js"></script>
 	<script src="boostrap/bootstrap.min.js"></script>
 	<script src="js/proyectopersonal.js"></script>
+<!-- PUReba de script-->
+
+<style type="text/css">
+    .zoom{
+        /* Aumentamos la anchura y altura durante 2 segundos */
+        transition: width 1s, height 1s, transform 1s;
+        -moz-transition: width 1s, height 1s, -moz-transform 1s;
+        -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+        -o-transition: width 1s, height 1s,-o-transform 1s;
+    }
+    .zoom:hover{
+        /* tranformamos el elemento al pasar el mouse por encima al doble de
+           su tamaño con scale(2). */
+        transform : scale(1.1);
+        -moz-transform : scale(1.1);      /* Firefox */
+        -webkit-transform : scale(1.1);   /* Chrome - Safari */
+        -o-transform : scale(1.1);        /* Opera */
+    }
+</style>
+<!-- fin de prueba de script-->
+
 	<title>Inicio</title>
 </head>
 <body>
 	<div class="head">
-		<nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class=" navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 10;">
 			<a class="navbar-brand" href="main.html">Logo</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
 			</button>
@@ -25,16 +46,20 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
-				        <a class="nav-link disabled" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+				        <a class="nav-link disabled" href="#index">Inicio<span class="sr-only">(current)</span></a>
 				    </li>
 				    <li class="nav-item">
-				       <a class="nav-link disabled" href="proyecto.html">Proyecto Personal</a>
+				        <a class="nav-link" href="#sobremi">Sobre mí</a>
 				    </li>
 				    <li class="nav-item">
-				        <a class="nav-link" href="Sobremi.html">Sobre mí</a>
+				       <a class="nav-link disabled" href="#proyecto">Proyecto Personal</a>
 				    </li>
 				    <li class="nav-item">
-				        <a class="nav-link" href="contacto.html">Contacto</a>
+				       <a class="nav-link disabled" href="#Trabajos">Trabajos</a>
+				    </li>
+				    
+				    <li class="nav-item">
+				        <a class="nav-link" href="#contacto">Contacto</a>
 				    </li>
 				</ul>
 			</div>
@@ -42,42 +67,57 @@
 	</div>
 <!-- Pagina sobre mi-->	
 	<div class="container-fluid">
-			<div class="jumbotron" style="background-color: #7068FF;">
+			<div class="jumbotron" id="sobremi" style="background-color: #7068FF;">
  				<h1 class="display-4">Sobre Mí</h1>
  				<div class="row">	
- 					<div class="col-md-4"><img src="img.png"></div>
+ 					<div class="col-md-4"><img class="zoom" src="img.png"></div>
 					<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
 					</div>
 				</div>
 			</div>
 	</div>
 	<hr/>	
-	<div class="container">
-		<div class="row">
-			<div class="row">
-				<div class="col-md-12"><h1>Sobre mí</h1></div>
-			</div>
-		
+	<div class="container" id="ContenidoSobremi">
+		<div class="row">		
 			<hr/>
 			<div class="row"> 
 				<div class="col-md-6">
-					<div class="row"><h3> What are you strengths?</h3><p>I am generally happy and funny person.<br>I am resisten to outside  forces.<br>I am responsible and aware(atento o conciente) of deadlines.<br>I am a great negotiator.</p></div>
+					<div class="row">
+						<div class="row" style="text-align: left;"><h3 id="Qfortalezas"> What are you strengths?</h3></div>
+						<div class="row">
+						<p id="Rfortalezas">I am generally happy and funny person.<br>I am resisten to outside  forces.<br>I am responsible and aware(atento o conciente) of deadlines.<br>I am a great negotiator.</p>
+						</div>
+					</div>
 					<hr/>
-					<div class="row"><h3> What are you weaknesses?</h3><p>I am nervous and it affects my speech but i am working on  strategies to improve.</p></div>
+					<div class="row">
+						<div class="row" style="text-align: left;"><h3 id="Qdebilidades"> What are you weaknesses?</h3></div>
+						<div class="row"><p id="Rdebilidades">I am nervous and it affects my speech but i am working on  strategies to improve.</p></div>
+					</div>
 					<hr/>
-					<div class="row"><h3>What are your in this  career?</h3><p>Improve  my skills in web development and desing and  improve my English</p></div>
+					<div class="row"> 
+						<div class="row" style="text-align: left;"><h3 id="Qcarrera">What are your in this  career?</h3></div>
+						<div class="row"><p id="Rcarrera">Improve  my skills in web development and desing and  improve my English</p></div>
+					</div>
 					<hr/>
-					<div class="row"><h3>Where do  you see yourself  in 5 years?</h3><p>I see myself working on big proyect for web systems  and  other programs</p></div>
+					<div class="row">
+						<div class="row" style="text-align: left;"><h3 id="Qfuturo">Where do  you see yourself  in 5 years?</h3> </div>
+						<div class="row"><p id="Rfuturo">I see myself working on big proyect for web systems  and  other programs</p></div>
+					 </div>
 					<hr/>
-					<div class="row"><h3> Do ypu think you  work well in  a team?</h3><p>Yes, I tend to fill  missing roles and assume certain responsabilities that are not yet assumed</p></div>
+					<div class="row"> 
+					<div class="row" style="text-align: left;"><h3 id="Qteamwork"> Do ypu think you  work well in  a team?</h3></div>
+					<div class="row"><p id="Rteamwork">Yes, I tend to fill  missing roles and assume certain responsabilities that are not yet assumed</p></div>
+					</div>
 					<hr/>
-					<div class="row"><h3> What roel do you usualli tke on in a team?</h3><p>I genarally tke the role that is assigned to me.if one is not assigned. I identify missing tasks and  omplete them</p></div>
-
+					<div class="row"> 
+						<div class="row" style="text-align: left;" ><h3 id="Qrol"> What roel do you usualli tke on in a team?</h3></div>
+						<div class="row"><p id="Rrol">I genarally tke the role that is assigned to me.if one is not assigned. I identify missing tasks and  omplete them</p></div>
+					</div>
 				</div>
 				
 					<div class="col-md-6">
 						<p>
-							Soy una persona alegre 
+							Soy estudian egresado de los bachilleratos de Ingeniería (Institución Liceo Solymar 2 Norte) e Informática (Institución Escuela Técnica Solymar), siempre tuve un interés por el desarrollo de videojuegos y en Bachillerato de informática pude dar mis primero a lo que son las áreas I.T. donde pude ver y entender lo extenso del mundo de la informática, lo cual amplio mi interés a distintas áreas. He realizado distintos cursos entre ellos los más destacables serian Testing Funcional(Forge) y Desarrollo web (Jovenes a Programar), en donde me capacitaron tanto técnicamente como humanísimamente para que pudiera desenvolverme en un ambiente laboral de la mejor forma posible pudiendo brindad todas mis habilidades y también ser parte de cualquier grupo de trabajo sumando positivamente al grupo.
 						<a type="button" href="Cv-Agustín-Pressel-16-07-2018.pdf" target="_blank">You can view my C.V. if you need</a>
 						</p>
 						<br/>
@@ -90,17 +130,18 @@
 	</div>	
 		<!-- Pagina Proyecto personal-->
 	<div class="container-fluid">
-			<div class="jumbotron">
+			<div class="jumbotron" id="proyecto">
  				<h1 class="display-4">Proyecto Personal</h1>
  				<div class="row">	
- 					<div class="col-md-4"><img src="img.png"></div>
-					<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
+ 					<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
 					</div>
+ 					<div class="col-md-4"><img src="img.png"></div>
+					
 				</div>
 			</div>
 	</div>
 	<hr/>
-	<div class="container">		
+	<div class="container" id="ContenidoProyecto">		
 			<!--<div class="row"> 
 					<div class="col-md-8"><h3>Jovenes A Programar</h3><p>Jóvenes a Programar apunta a la inserción laboral en un rubro con alta demanda. Su Servicio de Intermediación Laboral vincula a los estudiantes con el ambiente y la cultura del sector tecnológico, además de gestionar una bolsa de trabajo.</p><p>Capacitándolos con los profesionales que están trabajando ahora en las principales empresas y organizaciones de tecnología. Ellos hacen el software de hoy, conocen el funcionamiento del sector y saben lo que necesitas para iniciarte en este campo laboral.</p><p>Al final del curso de nueve meses dominaran uno de los principales lenguajes de programación demandados por la industria (.Net, Python, Genexus o WebUI) o lo necesario para trabajar en testing.</p><a href="https://jovenesaprogramar.edu.uy/" target="_blank">Ver sito de jovenes a programar</a></div>
 					<div class="col-md-4"><img src="imagenes/plan-ceibal.png"></div>
@@ -188,7 +229,7 @@
 	</div>
 		<!-- Trabajos-->
 	<div class="container-fluid">
-		<div class="jumbotron">
+		<div class="jumbotron" id="Trabajos">
  			<h1 class="display-4">Trabajos</h1>
  			<div class="row">	
  				<div class="col-md-4"><img src="img.png"></div>
@@ -202,14 +243,14 @@
 
 		<!-- Contacto-->
 	<div class="container-fluid">
-		<div class="jumbotron">
+		<div class="jumbotron" id="contacto">
  			<h1 class="display-4">Contacto</h1>
  			<div class="row">	
  				<div class="col-md-4"><img src="img.png"></div>
 				<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" id="ContenidoContacto">
 				<div id="contactame" class="row mx-md-5 mx-1 px-3 px-md-5 __web-inspector-hide-shortcut__">
 			<div class="container-fluid">
 				<h1 class="display-4 mb-5">Contáctame</h1>
