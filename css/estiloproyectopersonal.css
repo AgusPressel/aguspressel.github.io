@@ -242,3 +242,8 @@ text-align: center;
 	
 	border-bottom: 3px solid  #307adb;
 }
+
+.margintop{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
