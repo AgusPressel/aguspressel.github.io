@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#ContenidoSobremi").hide();   
     $("#ContenidoProyecto").hide();
     $("#ContenidoTrabajos").hide(); 
-  //  $("#ContenidoContacto").hide();  
+   $("#ContenidoContacto").hide();  
 // fin de variables de los contenidos principales
 // ----- variables  de preguntas sobre mi
     $("#Rfortalezas").hide();
@@ -99,7 +99,7 @@ $(document).ready(function(){
     $("#Trabajos").click(function(){
         $("#ContenidoTrabajos").toggle(10);     
     });
-    $("#Contacto").click(function(){
+    $("#contacto").click(function(){
         $("#ContenidoContacto").toggle(10);       
     });
 
@@ -130,7 +130,25 @@ $(function($){
         });
 });
 
+// scroll spy
 
+var ScrollLink = $('.scroll');
+ScrollLink.click(function(e) {
+    e.preventDefault()
+    $('body,html').animate({
+        scrollTop: $(this.hash).offset().top
+    }, )
+});
+
+//parallax
+$(window).scroll(function() {
+    var barra = $(window).scrollTop();
+    var posicion = barra * 0.5;
+
+    $('body').css({
+        'background-position': '0 -' + posicion + 'px'
+    });
+});
 
 
 });

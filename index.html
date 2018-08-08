@@ -3,112 +3,339 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="Language" content="Spanish">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="boostrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estiloproyectopersonal.css">
+
 	<script src="boostrap/jquery-3.3.1.min.js"></script>
 	<script src="boostrap/bootstrap.min.js"></script>
-	<title>Inicio</title>
-</head>
-<body>
-	<div class="head">
-			<nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
-			  <a class="navbar-brand" href="main.html">Logo</a>
-			  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="navbar-toggler-icon"></span>
-			  		</button>
+	<script src="js/proyectopersonal.js"></script>
 
-				  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-				    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				      <li class="nav-item active">
-				        <a class="nav-link disabled" href="index.html">Inicio<span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link disabled" href="proyecto.html">Proyecto Personal</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="Sobremi.html">Sobre mí</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="trabajos.html">Trabajos</a>
-				      </li>
-				       <li class="nav-item">
-				        <a class="nav-link" href="Curriculum.html">Curriculum</a>
-				      </li>
-				       <li class="nav-item">
-				        <a class="nav-link" href="contacto.html">Contacto</a>
-				      </li>
-				    </ul>
-				  </div>
-			</nav>
+	<title>Agustín Pressel</title>
+</head>
+<body data-spy="scroll" data-target="#navigation">
+	<div class="head">
+		<nav class=" navbar navbar-expand-lg navbar-dark bg-23dark" role="navigation" style="position: fixed; width: 100%; z-index: 10;">
+			<a class="navbar-brand" href="main.html">Logo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navigation">
+			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" role="tablist">
+					<li class="nav-item">
+				        <a class="nav-link scroll" href="#index"><span class="seleccionado">Inicio</span><span class="sr-only">(current)</span></a>
+				    </li>
+				    <li class="nav-item disabled">
+				        <a class="nav-link scroll" href="#sobremi"><span class="seleccionado">Sobre mí</span></a>
+				    </li>
+				    <li class="nav-item disabled">
+				       <a class="nav-link  scroll" href="#proyecto"><span class="seleccionado">Proyecto Personal</span></a>
+				    </li>			    
+				    <li class="nav-item disabled">
+				        <a class="nav-link scroll" href="#contacto"><span class="seleccionado">Contacto</span></a>
+				    </li>
+				</ul>
 			</div>
-		
-		
-			<div class="container">	
-				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
-					<div class="carousel-inner justify-content-center" style="height:300px;">
-						<div class="carousel-item active just justify-content-center">
-						    <img class="img-fluid " src="https://elandroidelibre.elespanol.com/wp-content/uploads/2018/05/mundial-futbol-3.jpg" alt="First slide">
+		</nav>
+	</div>
+	<div class="container-fluid" style="padding-top: 70px;">
+	 	<div class="row-fluid">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
+					<div class="carousel-inner " >
+						<div class="carousel-item active just justify-content-center" id="itemCarrusel1" >
+						    <img class="img-fluid img-responsive img-padding" style=" vertical-align:middle;" src="imagenes/desarroloweb.jpg" alt="First slide">
 						</div>
-						<div class="carousel-item">
-							<img class="img-fluid  " src="https://elandroidelibre.elespanol.com/wp-content/uploads/2018/05/mundial-futbol-3.jpg" alt="Second slide">
+						<div class="carousel-item" id="itemCarrusel2">
+							<img class="img-fluid img-responsive img-padding"  style="vertical-align:middle;" src="imagenes/desarrrolo2.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item" id="itemCarrusel3">
+							<img class="img-fluid img-responsive img-padding"  style="vertical-align:middle;" src="imagenes/desarrrolo3.jpg" alt="Second slide"> 
 						</div>
 					</div>
 					
-				</div>
-			</div>
-	
-		
-		<div class="container ">
-			<div class="row" style="padding-top: 50px;padding-bottom: 50px; text-align: center;">
-				<div class=" col-md-2 "></div>
-				<div class=" col-md-8 ">
-					<h1> Conóceme</h1>
-					<p>"Si es posible, debe hacerse reír hasta a los muertos" <br/> - Leonardo Da Vinci</p>
-					<p>"Los hombres geniales empiezan grandes obras, los hombres trabajadores las terminan" <br/>- Leonardo Da Vinci</p>
-					<p>"El aprendizaje  nunca agota la mente" <br/>- Leonardo Da Vinci</p>
-					<a type="button" name="ver más" href="Sobremi.html">Ver más </a> 
-				</div>
-				<div class=" col-md-2 "></div>
-			</div>
-		
-			
-	
-			<div class="row">
-
-				<div class=" col-md-4 " style="padding: 0px;"></div>
-
-				<div class="col-md-4 justify-content-center" style="padding: 0px;text-align: center;">
-						<h1>Proyecto Personal</h1>
-						<h3> jovenes a programar</h3>
-				</div>
-				<div class=" col-md-4 " style="padding: 0px;"></div>
-			</div>
-		
-	
-		
-			<div class="row" >				
-				<div class="col-md-4" style="padding: 0px; text-align: center;">
-					<img src="img.png">
-					<p>Punto de partida</p>
-				</div>
-				<div class="col-md-4" style="padding: 0px; text-align: center;">
-					<img src="img.png">
-					<p>Competencias adquridas</p>
-				</div>
-				<div class="col-md-4" style="padding: 0px; text-align: center;">
-					<img src="img.png">
-					<p>Objetivos</p>
-				</div>
-			</div>
-		
 		</div>
-	
+			
+		</div>
+		
+	</div>
+<!-- Pagina sobre mi-->	
+	<div class="container-fluid">
+			<div class="jumbotron" id="sobremi" ">
+ 				<h1 class="display-4">Sobre Mí</h1>
+ 				<div class="row">	
+					<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
+					</div>
+					<div class="col-md-4"><img class="zoom img-responsive retrato" src="imagenes/agus.png"></div>
 
-	<footer class="footer" style="  background-color:#070707;">
-      <div class="container">
-        <span class="text-muted"  >Place sticky footer content here.</span>
-      </div>
-    </footer>
+				</div>
+				<div class="row justify-content-center"> 
+					<span><img class="tamano-imagen izquierda" src="imagenes/flecha_abajo.png" alt="flecha para abajo"/></span>&nbsp;<p class="
+					vermas">Clic aquí para ver más</p>&nbsp;<span><img class="tamano-imagen derecha" src="imagenes/flecha_abajo.png" alt="flecha para abajo"></span>
+				
+				</div>
+			</div>
+	</div>
+	<hr/>	
+	<div class="container" id="ContenidoSobremi">
+		<div class="row">		
+			<hr/>
+			<div class="row"> 
+				<div class="col-md-6">
+					<div class="row">
+						<div class="row" style="text-align: left;" id="Qfortalezas"><h3 > What are you strengths?</h3>&nbsp;<img class="tamano-imagen2 derecha" src="imagenes/flecha_abajo_azul.png" alt="flecha para abajo"></div>
+						<div class="row">
+						<p id="Rfortalezas">I am generally happy and funny person.<br>I am resisten to outside  forces.<br>I am responsible and aware(atento o conciente) of deadlines.<br>I am a great negotiator.</p>
+						</div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="row" style="text-align: left;" id="Qdebilidades"><h3 > What are you weaknesses?</h3>&nbsp;<img class="tamano-imagen2 derecha" src="imagenes/flecha_abajo_azul.png" alt="flecha para abajo"></div>
+						<div class="row"><p id="Rdebilidades">I am nervous and it affects my speech but i am working on  strategies to improve.</p></div>
+					</div>
+					<hr/>
+					<div class="row"> 
+						<div class="row" style="text-align: left;" id="Qcarrera"><h3 >What are your in this  career?</h3>&nbsp;<img class="tamano-imagen2 derecha" src="imagenes/flecha_abajo_azul.png" alt="flecha para abajo"></div>
+						<div class="row"><p id="Rcarrera">Improve  my skills in web development and desing and  improve my English</p></div>
+					</div>
+					<hr/>
+					<div class="row">
+						<div class="row" style="text-align: left;" id="Qfuturo"><h3 >Where do  you see yourself  in 5 years?</h3>&nbsp;<img class="tamano-imagen2 derecha" src="imagenes/flecha_abajo_azul.png" alt="flecha para abajo"> </div>
+						<div class="row"><p id="Rfuturo">I see myself working on big proyect for web systems  and  other programs</p></div>
+					 </div>
+					<hr/>
+					<div class="row"> 
+					<div class="row" style="text-align: left;" id="Qteamwork"><h3 > Do ypu think you  work well in  a team?</h3><img class="tamano-imagen2 derecha" src="imagenes/flecha_abajo_azul.png" alt="flecha para abajo"></div>
+					<div class="row"><p id="Rteamwork">Yes, I tend to fill  missing roles and assume certain responsabilities that are not yet assumed</p></div>
+					</div>
+					<hr/>
+					<div class="row"> 
+						<div class="row" style="text-align: left;" id="Qrol"><h3 > What roel do you usualli tke on in a team?</h3>&nbsp;<img class="tamano-imagen2 derecha" src="imagenes/flecha_abajo_azul.png" alt="flecha para abajo"></div>
+						<div class="row"><p id="Rrol">I genarally tke the role that is assigned to me.if one is not assigned. I identify missing tasks and  omplete them</p></div>
+					</div>
+				</div>
+				
+					<div class="col-md-6">
+						<p>
+							Soy estudian egresado de los bachilleratos de Ingeniería (Institución Liceo Solymar 2 Norte) e Informática (Institución Escuela Técnica Solymar), siempre tuve un interés por el desarrollo de videojuegos y en Bachillerato de informática pude dar mis primero a lo que son las áreas I.T. donde pude ver y entender lo extenso del mundo de la informática, lo cual amplio mi interés a distintas áreas. He realizado distintos cursos entre ellos los más destacables serian Testing Funcional(Forge) y Desarrollo web (Jovenes a Programar), en donde me capacitaron tanto técnicamente como humanísimamente para que pudiera desenvolverme en un ambiente laboral de la mejor forma posible pudiendo brindad todas mis habilidades y también ser parte de cualquier grupo de trabajo sumando positivamente al grupo.
+						</p>
+						<div class="row justify-content-center" >
+							<a class="botonCV vermas2 "  href="Cv-Agustín-Pressel-16-07-2018.pdf" target="_blank">Puedes ver mi C.V. presionando aquí</a>
+				
+						</div>
+						
+						<br/>
+					</div>
+					
+			</div>
+			
+									
+		</div>
+	</div>	
+		<!-- Pagina Proyecto personal-->
+	<div class="container-fluid">
+			<div class="jumbotron" id="proyecto">
+ 				<h1 class="display-4">Proyecto Personal</h1>
+ 				<div class="row">	
+ 					<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
+					</div>
+ 					<div class="col-md-4"><img class="proyectoimagen" src="imagenes/Proyecto.png" alt="imagen de proyecto personal"></div>
+					
+				</div>
+				<div class="row justify-content-center"> 
+					<span><img class="tamano-imagen izquierda" src="imagenes/flecha_abajo.png" alt="flecha para abajo"/></span>&nbsp;<p class="
+					vermas">Clic aquí para ver más</p>&nbsp;<span><img class="tamano-imagen derecha" src="imagenes/flecha_abajo.png" alt="flecha para abajo"></span>
+				
+				</div>
+			</div>
+	</div>
+	<hr/>
+	<div class="container" id="ContenidoProyecto">		
+			<div class="row">
+				<div ><h3>Punto de partida</h3><p>Soy estudian egresado de los bachilleratos de Ingeniería (Institución Liceo Solymar 2 Norte) e Informática (Institución Escuela Técnica Solymar), siempre tuve un interés por el desarrollo de videojuegos y en Bachillerato de informática pude dar mis primero a lo que son las áreas I.T. donde pude ver y entender lo extenso del mundo de la informática, lo cual amplio mi interés a distintas áreas. He realizado distintos cursos entre ellos los más destacables serian  Testing Funcional(Forge) y Desarrollo web (Jovenes a Programar), en donde me  capacitaron  tanto técnicamente como humanísimamente  para que pudiera  desenvolverme en un ambiente laboral de la mejor forma posible pudiendo brindad todas mis habilidades y también ser parte de cualquier grupo de trabajo sumando positivamente al grupo.</p></div>
+				
+			</div>
+			<hr/>
+			<div class="row">
+					<div>
+						<h3>Competencias adquiridas</h3>
+					</div>	
+			</div>
+			<div class="row">	
+				
+					<div col-md-1"></div>
+					<div class="li col-md-2" style="text-align: center;" id="trabajo1">
+						<div class="trabajo2"><img  src="imagenes/macintosh.png" width="80px"><br><p>Trabajo en Equipo</p></div>
+					</div>
+					<div class="li col-md-2" style="text-align: center;" id="proactividad2">
+						<div class="proactividad3"><img   src="imagenes/lightbulb.png" width="80px"><br><p >Proactividad</p></div>
+					</div>
+					<div class="li col-md-2" style="text-align: center;" id="capacidad2">
+						<div class="capacidad3"><img src="imagenes/nut.png" width="80px"><br><p>Capacidad de Resolución</p></div>
+					</div>
+					<div class="li col-md-2" style="text-align: center;" id="responsabilidad1">
+						<div class="responsabilidad2"><img   src="imagenes/pen.png" width="80px"><br><p>Responsabilidad</p></div>
+					</div>
+					<div class="li col-md-2" style="text-align: center;" id="relacion1">
+						<div class="relacion3"><img  src="imagenes/chat.png" width="80px"><br> <p>Relaciones Interpersonales</p></div>
+					</div>
+					<div col-md-1"></div>
+
+			
+			</div>
+			<div class="row">
+					<div>
+						<div><p id="trabajo">Trabajo en Equipo<br/>Capacidad para formar parte de una grupo y trabajar hacia la consecución de fines comunes, fortaleciendo el espíritu de equipo
+						</p>
+						<p id="proactividad"> Proactividad<br/> Actitud proclive a la iniciativa; idear e implementar soluciones a desafìos con independecia de criterio y sin necesidad de un requerimiento externo.</p>
+						
+						<p id="capacidad"> Capacidad de Resolución<br/>Actitud para decidir o resolver un asunto de forma rápida y acertada.</p>
+						
+						<p id="responsabilidad"> Responsabilidad<br/>Actitud comprometida con el curso, cumpliendo tiempos establecidos y respetando las normas del programa.</p>
+						
+						<p id="relacion">Relaciones Interpersonales<br/>Capacidad de empatía, brindar un trato amable y respetuoso, con el objetivo de fortalecer el buen clima grupal.</p>
+						
+						
+						<p>Estas son las habilidades transversales  son las que considero que más me caracterizan, ya que  soy una persona que le gusta trabajar en equipo para poder cumplir una meta, siempre aportando ideas o comentarios con la intención de ayudar o beneficiar al bien común de la forma mas empática posible. Tomo la responsabilidad de la tarea que se debe de cumplir, esforzándome para que se cumpla con el objetivo. Considero que soy una persona con capacidad de resolución ya que siempre que me enfrento a un problema, busco las distintas maneras para poder encontrar la solución del mismo.</p>
+						</div>
+					</div>			
+			</div>
+			<hr/>
+			<div class="row">
+				<div>
+					<h2>Objetivos</h2>
+					<h3>Ingenieria en Sistmeas</h3>
+					<p>Retomar mis estudios en facultad de ingeniería </p>
+					<h4>Plan de acción:</h4>
+					<ul class="ul">
+						<li>¿Qué debes hacer para retomar la facultad? Averiguar el horario de las materias de las cuales debo cursar, y encontrar las que se adapten más a mis horarios,  ¿en dónde te fijas? me podria fijar mediante el sitio web Eva.fing.edu.uy o podria consultar los orarios en bedelia </li>
+						<li>Averiguar la carga horaria que tiene cada materia.</li>
+						<li>Inscribirme en la o las materias, que dispongan horarios accecibles para mi disponibilidad</li>
+						<li>Averiguar las fechas y hora de los parciales. </li>
+					</ul>
+					<h4>Administración de recursos:</h4>
+					<ul class="ul">
+						<li><span class="naranja">R. Humano:</span><br/><dir> Cuento con las siguientes competencias que pueden aportar positibamente a la realización del proyecto, perseverenacia, interes,Capacidad de Resolución,Responsabilidad y más.</dir></li> 
+						<li><span class="naranja">R. Económico:</span><br/><dir> Los gastos que requiere la carrera como serian boletos,comida, fotocopias, y más, que ya los tendria cubiertos por el trabajo</dir></li>
+						<li><span class="naranja">R. Temporales: </span>
+							<ul class="ul">
+								<li>8 horas de sueño</li>
+								<li>8 horas de trabajo</li>
+								<li>2 horas de estudio </li>
+								<li>4 horas de viaje</li>
+								<li>2 horas de libres</li>
+							</ul>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			<div class="row">				
+					<div class="col-md-6"><h4>Fortalezas</h4><dir> <p>Considero que cuento con una gran fuente de recursos que se pueden considerar grandes fortalezas, ya que al tener dos bachilleratos el de ingeniería y el de informática puedo cubrir las carencias de cada uno con el otro y son factores que pueden influenciar mi rendimiento en la carrera. También cuento con la fuente de información y experiencias brindadas por mi trabajo.</p></dir></div>
+					<div class="col-md-6"><h4>Debilidades</h4><dir><p>Las debilidades con las que cuento con serian, la distancias a recorrer entre mi trabajo, la facultad y mi casa, ya que estas mismas me consumen mucho tiempo que podría invertir de otro modo, otras de las de las debilidades con las que cuento es el cansancio que genera en mi cuerpo y mente la realización de la rutina la cual podría disminuir mis ganas de realizar las tareas.</p></dir></div>
+					<div class="col-md-6"><h4>Oportunidades</h4><dir><p>Las oportunidades con las que cuento sería conseguir horarios de las materias que me sean accesible, o que en el trabajo me reduzcan la carga horaria.</p></dir></div>
+					<div class="col-md-6"><h4>Amenazas</h4><dir><p>Las amenazas mas fuerte que me podrían afectar serian alguna enfermedad, el clima, algún parto de transporte, etc.</p></dir></div>				
+			</div>
+			
+	</div>
+		<!-- Trabajos-->
+	<!--<div class="container-fluid">
+		<div class="jumbotron" id="Trabajos">
+ 			<h1 class="display-4">Trabajos</h1>
+ 			<div class="row">	
+ 				<div class="col-md-4"><img src="img.png"></div>
+				<div class="col-md-8 jumbotron jumbotron2"><p class="lead" id="frase">“La cosa más valiosa que puedes hacer es cometer un error, nada puedes aprender de ser perfecto”.</p><p id="frase-autor">- Adam Osborne</p>
+				</div>
+			</div>
+			<div class="row"> <p style="text-align: center;">Ver mas </p></div>
+			
+		</div>
+	</div>
+	<hr/> -->
+
+		<!-- Contacto-->
+	<div class="container-fluid">
+		<div class="jumbotron" id="contacto">
+ 			<div class="row  justify-content-center">	
+ 				<h1 class="display-4">Contáctame</h1>
+			</div>
+			<div class="row justify-content-center"> 
+				<span><img class="tamano-imagen izquierda" src="imagenes/flecha_abajo.png" alt="flecha para abajo"/></span>&nbsp;<p class="
+					vermas">Clic aquí para ver más</p>&nbsp;<span><img class="tamano-imagen derecha" src="imagenes/flecha_abajo.png" alt="flecha para abajo"></span>
+				
+			</div>
+		</div>
+			<div class="row" id="ContenidoContacto">
+				<div id="contactame" class="row mx-md-5 mx-1 px-3 px-md-5 __web-inspector-hide-shortcut__ justify-content-center">
+					<div class="container-fluid">
+						<form id="form" method="POST">
+							<div class="container ">
+								<div class="input-group mb-4">
+									<div class="input-group-prepend">
+				   						<span class="input-group-text" id="basic-addon1">Nombre</span>
+									</div>
+									<input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre Apellido" required="">
+								</div>
+								<div class="input-group mb-4">
+									<div class="input-group-prepend">
+				   						<span class="input-group-text" id="basic-addon1">Email</span>
+									</div>
+									<input type="email" name="email" id="email" class="form-control" placeholder="email@ejemplo.com" required="">
+								</div>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+				   						<span class="input-group-text" id="basic-addon1">Asunto</span>
+									</div>
+									<input type="text" name="asunto" id="asunto" class="form-control" placeholder="¿Qué puedo hacer por ti?" required="">
+								</div>
+								<label><p class="lead"><b>Mensaje</b></p></label>
+								<div class="input-group mb-2">
+										<textarea placeholder="Déjame tu mensaje aquí" class="form-control mb-3" id="textarea" rows="5" required=""></textarea>
+								</div>
+								<input class="btn btn-primary mr-3" type="submit" value="Enviar">							
+								<span class="formresponse"></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<footer><form action="https://formspree.io/aguspressel@hotmail.com"
+      method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+</form></footer>-->
+
 </body>
 </html>
